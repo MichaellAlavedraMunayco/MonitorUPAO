@@ -1,0 +1,23 @@
+{
+  "name": "monitor-upao",
+  "version": "1.0.0",
+  "description": "Data Reception",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MichaellAlavedraMunayco/MonitorUpao.git"
+  },
+  "author": "Michaell Alavedra Munayco",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
