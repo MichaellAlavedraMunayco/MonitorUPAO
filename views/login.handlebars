@@ -1,0 +1,20 @@
+<h3 style="color:blue">{{{mensaje}}}</h3>
+<h1>Registrate</h1>
+<form action="register" method="post">
+  <input type="number" name="id_alumno" placeholder="ID UPAO" value="000082442">
+  <input type="text" name="apellidos_nombres" placeholder="Apellidos y nombres" value="Alavedra Munayco Fernando Michaell">
+  <input type="password" name="password" placeholder="Crea una contraseña" value="abc">
+  <select name="id_carrera">
+    <option>Selecciona tu carrera</option>
+    {{#each carreras}}
+    <option value="{{codigo}}">{{nombre}}</option>
+    {{/each}}
+  </select>
+  <input type="submit" value="Registrarme">
+</form>
+<h1>Inicia sesión</h1>
+<form action="login" method="post">
+  <input type="number" name="id_alumno" placeholder="ID UPAO" value="000082442">
+  <input type="password" name="password" placeholder="Contraseña" value="abc">
+  <input type="submit" value="Ingresar">
+</form>
